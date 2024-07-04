@@ -52,8 +52,9 @@ const Header: React.FC = () => {
                 {link.title}
               </Link>
               <span
-                className={`absolute left-0 right-0 bottom-[-6px] h-1 bg-gray-500 transition-transform duration-300 ${hoveredIndex === index ? 'scale-x-100' : 'scale-x-0'
-                  }`}
+                className={`absolute bottom-[-6px] left-0 right-0 h-1 bg-gray-500 transition-transform duration-300 ${
+                  hoveredIndex === index ? 'scale-x-100' : 'scale-x-0'
+                }`}
                 style={{
                   transformOrigin: hoveredIndex === index ? 'left' : 'right',
                 }}
