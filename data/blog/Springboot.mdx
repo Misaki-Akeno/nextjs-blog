@@ -8,8 +8,6 @@ images: ['/static/images/canada/mountains.jpg']
 
 <TOCInline toc={props.toc} asDisclosure />
 
-
-
 ## 基本流程
 
 ### new SpringApplication()
@@ -50,7 +48,4 @@ images: ['/static/images/canada/mountains.jpg']
 3.  容器创建好了以后，会为容器做一些准备工作，比如为容器设置Environment、BeanFactoryPostProcessor后置处理
 4.  刷新容器，就是我们常说的refresh，在这里会真正的创建Bean实例
 
-
     **总结**：总结一下刚刚说的，其实SpringBoot启动的时候核心就两步，创建SpringApplication对象，以及run方法的调用，在run方法中会真正的实例化容器、创建Bean实例，最终返回
-
-

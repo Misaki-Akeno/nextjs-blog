@@ -54,7 +54,7 @@ const ThemeSwitch = () => {
   useEffect(() => setMounted(true), [])
 
   return (
-    <div className="flex items-centermr-5">
+    <div className="items-centermr-5 flex">
       <Menu as="div" className="relative inline-block text-left">
         <div className="flex items-center hover:text-primary-500 dark:hover:text-primary-400">
           <Menu.Button>
