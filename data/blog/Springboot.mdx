@@ -2,7 +2,13 @@
 title: Springboot八股
 date: '2024-07-04'
 tags: ['Spring', 'code']
+layout: PostBanner
+images: ['/static/images/canada/mountains.jpg']
 ---
+
+<TOCInline toc={props.toc} asDisclosure />
+
+
 
 ## 基本流程
 
@@ -19,7 +25,7 @@ tags: ['Spring', 'code']
 2. 打印Banner
 3. 实例化容器Context
 4. 准备容器，为容器设置Environment、BeanFactoryPostProcessor，并加载主类对应的BeanDefinition
-5. 刷新容器（创建Bean实例）[[IOC容器初始化流程]]（refreshContext()）
+5. 刷新容器（创建Bean实例）
 6. 返回容器
 
 ## 源码图
@@ -43,4 +49,8 @@ tags: ['Spring', 'code']
 2.  实例化容器，这里仅仅是创建ApplicationContext对象
 3.  容器创建好了以后，会为容器做一些准备工作，比如为容器设置Environment、BeanFactoryPostProcessor后置处理
 4.  刷新容器，就是我们常说的refresh，在这里会真正的创建Bean实例
+
+
     **总结**：总结一下刚刚说的，其实SpringBoot启动的时候核心就两步，创建SpringApplication对象，以及run方法的调用，在run方法中会真正的实例化容器、创建Bean实例，最终返回
+
+
